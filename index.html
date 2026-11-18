@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhishek Bhaskaran | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body class="light">
+
+  <!-- ======== CURSOR ======== -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ======== SIDE DRAWER NAV ======== -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="drawer" id="drawer">
+    <button class="drawer-close" id="drawerClose" aria-label="Close menu">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <div class="drawer-logo">AB<span>.</span></div>
+    <nav class="drawer-nav">
+      <a href="#home"     class="drawer-link" data-label="01">Home</a>
+      <a href="#about"    class="drawer-link" data-label="02">About</a>
+      <a href="#skills"   class="drawer-link" data-label="03">Skills</a>
+      <a href="#projects" class="drawer-link" data-label="04">Projects</a>
+      <a href="#contact"  class="drawer-link" data-label="05">Contact</a>
+    </nav>
+    <div class="drawer-socials">
+      <a href="mailto:abhishekbhaskaran0913@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  </aside>
+
+  <!-- ======== TOP BAR ======== -->
+  <header class="topbar" id="topbar">
+    <div class="topbar-inner">
+      <div class="tb-logo">AB<span>.</span></div>
+      <nav class="tb-nav">
+        <a href="#home"     class="tb-link">Home</a>
+        <a href="#about"    class="tb-link">About</a>
+        <a href="#skills"   class="tb-link">Skills</a>
+        <a href="#projects" class="tb-link">Projects</a>
+        <a href="#contact"  class="tb-link">Contact</a>
+      </nav>
+      <div class="tb-actions">
+        <button id="themeBtn" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon" id="themeIco"></i>
+        </button>
+        <button id="menuBtn" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================================================
+       HERO — split screen
+  ======================================================= -->
+  <section id="home" class="hero">
+    <!-- LEFT PANEL -->
+    <div class="hero-left">
+      <div class="hl-content">
+        <div class="hl-tag"><span class="dot-pulse"></span> Available for opportunities</div>
+        <h1 class="hl-name">
+          <span class="hl-first">Abhishek</span>
+          <span class="hl-last">Bhaskaran</span>
+        </h1>
+        <div class="hl-role">
+          <span class="role-static">I build&nbsp;</span>
+          <span class="role-cycle" id="roleCycle">web apps</span>
+        </div>
+        <p class="hl-bio">
+          Computer Engineering graduate from Silver Oak University with a knack for
+          turning complex problems into clean, working software.
+        </p>
+        <div class="hl-cta">
+          <a href="#projects" class="cta-main">See My Work <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#contact"  class="cta-ghost">Let's Talk</a>
+        </div>
+        <div class="hl-stats">
+          <div class="stat"><span class="stat-num">7.98</span><span class="stat-lbl">CGPA</span></div>
+          <div class="stat-div"></div>
+          <div class="stat"><span class="stat-num">2+</span><span class="stat-lbl">Projects</span></div>
+          <div class="stat-div"></div>
+          <div class="stat"><span class="stat-num">5+</span><span class="stat-lbl">Tech Stack</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="hero-right">
+      <div class="hr-blob"></div>
+      <div class="hr-card">
+        <div class="hrc-avatar">
+          <svg viewBox="0 0 200 200" class="hrc-svg">
+            <defs>
+              <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%"   stop-color="#7D9E7E"/>
+                <stop offset="100%" stop-color="#C9A84C"/>
+              </linearGradient>
+            </defs>
+            <path d="M100,10 L190,55 L190,145 L100,190 L10,145 L10,55 Z" fill="url(#avatarGrad)" opacity="0.15"/>
+            <path d="M100,25 L175,65 L175,135 L100,175 L25,135 L25,65 Z" fill="url(#avatarGrad)" opacity="0.2"/>
+          </svg>
+          <div class="hrc-initials">AB</div>
+        </div>
+        <div class="hrc-name">Abhishek Bhaskaran</div>
+        <div class="hrc-title">Computer Engineer</div>
+        <div class="hrc-chips">
+          <span>Python</span><span>ML</span><span>Web Dev</span>
+        </div>
+      </div>
+      <!-- Floating elements -->
+      <div class="fl fl-1"><i class="fa-solid fa-code"></i><span>Developer</span></div>
+      <div class="fl fl-2"><i class="fa-solid fa-graduation-cap"></i><span>Graduate</span></div>
+      <div class="fl fl-3"><i class="fa-solid fa-brain"></i><span>ML Enthusiast</span></div>
+    </div>
+
+    <div class="hero-scroll-line"></div>
+  </section>
+
+  <!-- ======================================================
+       ABOUT — horizontal timeline layout
+  ======================================================= -->
+  <section id="about" class="about-sec">
+    <div class="diagonal-top"></div>
+    <div class="about-inner">
+      <div class="sec-label">— WHO I AM</div>
+      <h2 class="sec-heading">My <em>Story</em></h2>
+
+      <div class="about-layout">
+        <!-- BIG TEXT BLOCK -->
+        <div class="about-text">
+          <p class="about-big">
+            I'm a passionate developer who loves building things that
+            <mark>actually work</mark> and look great doing it.
+          </p>
+          <p class="about-body">
+            Currently a Computer Engineering diploma holder from Silver Oak University,
+            I've spent my time turning ideas into real projects — from a smart budget trip
+            planner to an ML-powered HR analytics system.
+          </p>
+          <a href="#contact" class="cta-main" style="margin-top:28px;display:inline-flex;">
+            Hire Me <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- TIMELINE -->
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <span class="tl-year">2020</span>
+              <h3 class="tl-title">10th Grade</h3>
+              <p class="tl-place">Sakar English School</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot tl-dot--gold"></div>
+            <div class="tl-content">
+              <span class="tl-year">2020 – 2023</span>
+              <h3 class="tl-title">Diploma – Computer Engineering</h3>
+              <p class="tl-place">Silver Oak University</p>
+              <span class="tl-badge">CGPA 7.98</span>
+            </div>
+          </div>
+          <div class="tl-item tl-item--active">
+            <div class="tl-dot tl-dot--active"></div>
+            <div class="tl-content">
+              <span class="tl-year">Now</span>
+              <h3 class="tl-title">Building & Learning</h3>
+              <p class="tl-place">Projects · Open Source · Growth</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="diagonal-bottom"></div>
+  </section>
+
+  <!-- ======================================================
+       SKILLS — hexagon + side bars
+  ======================================================= -->
+  <section id="skills" class="skills-sec">
+    <div class="skills-inner">
+      <div class="sec-label">— WHAT I KNOW</div>
+      <h2 class="sec-heading">My <em>Skills</em></h2>
+
+      <div class="skills-layout">
+
+        <!-- HEX GRID -->
+        <div class="hex-grid">
+          <div class="hex-wrap">
+            <div class="hex hex--sage">
+              <div class="hex-in"><i class="fa-brands fa-python"></i><span>Python</span></div>
+            </div>
+          </div>
+          <div class="hex-wrap">
+            <div class="hex hex--gold">
+              <div class="hex-in"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+            </div>
+          </div>
+          <div class="hex-wrap">
+            <div class="hex hex--sage">
+              <div class="hex-in"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+            </div>
+          </div>
+          <div class="hex-wrap">
+            <div class="hex hex--light">
+              <div class="hex-in"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+            </div>
+          </div>
+          <div class="hex-wrap">
+            <div class="hex hex--gold">
+              <div class="hex-in"><i class="fa-solid fa-database"></i><span>MySQL</span></div>
+            </div>
+          </div>
+          <div class="hex-wrap">
+            <div class="hex hex--sage">
+              <div class="hex-in"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+            </div>
+          </div>
+          <div class="hex-wrap">
+            <div class="hex hex--light">
+              <div class="hex-in"><i class="fa-solid fa-brain"></i><span>ML</span></div>
+            </div>
+          </div>
+          <div class="hex-wrap">
+            <div class="hex hex--gold">
+              <div class="hex-in"><i class="fa-solid fa-chart-bar"></i><span>Pandas</span></div>
+            </div>
+          </div>
+          <div class="hex-wrap">
+            <div class="hex hex--sage">
+              <div class="hex-in"><i class="fa-brands fa-react"></i><span>React</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BARS SIDE -->
+        <div class="skills-bars-side">
+          <div class="sbs-item">
+            <div class="sbs-top"><span>HTML & CSS</span><span class="sbs-pct">90%</span></div>
+            <div class="sbs-track"><div class="sbs-fill" data-w="90"></div></div>
+          </div>
+          <div class="sbs-item">
+            <div class="sbs-top"><span>Python</span><span class="sbs-pct">85%</span></div>
+            <div class="sbs-track"><div class="sbs-fill" data-w="85"></div></div>
+          </div>
+          <div class="sbs-item">
+            <div class="sbs-top"><span>JavaScript</span><span class="sbs-pct">75%</span></div>
+            <div class="sbs-track"><div class="sbs-fill" data-w="75"></div></div>
+          </div>
+          <div class="sbs-item">
+            <div class="sbs-top"><span>Machine Learning</span><span class="sbs-pct">70%</span></div>
+            <div class="sbs-track"><div class="sbs-fill" data-w="70"></div></div>
+          </div>
+          <div class="sbs-item">
+            <div class="sbs-top"><span>MySQL</span><span class="sbs-pct">65%</span></div>
+            <div class="sbs-track"><div class="sbs-fill" data-w="65"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       PROJECTS — fullscreen numbered showcase
+  ======================================================= -->
+  <section id="projects" class="projects-sec">
+    <div class="diagonal-top diagonal-top--dark"></div>
+    <div class="projects-inner">
+      <div class="sec-label sec-label--light">— WHAT I'VE BUILT</div>
+      <h2 class="sec-heading sec-heading--light">My <em>Projects</em></h2>
+
+      <div class="proj-showcase">
+
+        <!-- PROJECT 1 -->
+        <div class="proj-item">
+          <div class="proj-num">01</div>
+          <div class="proj-body">
+            <div class="proj-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+            <div class="proj-info">
+              <h3>Pocket Explorer</h3>
+              <p>
+                A smart budget-based trip planner. Enter ₹20,000 and get instant hotel
+                recommendations, travel destinations, and full itineraries — all within
+                your budget. No more overspending surprises.
+              </p>
+              <div class="proj-tags">
+                <span>Python</span><span>Web Dev</span><span>API Integration</span><span>Budget AI</span>
+              </div>
+            </div>
+          </div>
+          <div class="proj-actions">
+            <a href="#" class="proj-btn"><i class="fa-brands fa-github"></i> Code</a>
+            <a href="#" class="proj-btn proj-btn--out"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+          </div>
+        </div>
+
+        <div class="proj-divider"></div>
+
+        <!-- PROJECT 2 -->
+        <div class="proj-item">
+          <div class="proj-num">02</div>
+          <div class="proj-body">
+            <div class="proj-icon"><i class="fa-solid fa-people-arrows"></i></div>
+            <div class="proj-info">
+              <h3>Employee Attrition Predictor</h3>
+              <p>
+                An ML-powered HR analytics system that predicts which employees are
+                likely to leave and suggests data-driven retention strategies. Helps
+                companies act before they lose their best people.
+              </p>
+              <div class="proj-tags">
+                <span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>ML</span>
+              </div>
+            </div>
+          </div>
+          <div class="proj-actions">
+            <a href="#" class="proj-btn"><i class="fa-brands fa-github"></i> Code</a>
+            <a href="#" class="proj-btn proj-btn--out"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="diagonal-bottom diagonal-bottom--dark"></div>
+  </section>
+
+  <!-- ======================================================
+       CONTACT — split with big text
+  ======================================================= -->
+  <section id="contact" class="contact-sec">
+    <div class="contact-inner">
+      <div class="contact-left">
+        <div class="sec-label">— SAY HELLO</div>
+        <h2 class="sec-heading">Let's <em>Connect</em></h2>
+        <p class="cl-body">
+          Open to collaborations, internships, freelance work, or just a friendly chat
+          about tech. Drop me a message and I'll respond soon.
+        </p>
+        <div class="cl-links">
+          <a href="mailto:abhishekbhaskaran0913@gmail.com" class="cl-link">
+            <div class="cl-ico"><i class="fa-solid fa-envelope"></i></div>
+            <div class="cl-txt">
+              <span>Email</span>
+              <strong>abhishekbhaskaran0913@gmail.com</strong>
+            </div>
+          </a>
+          <a href="https://github.com" target="_blank" class="cl-link">
+            <div class="cl-ico"><i class="fa-brands fa-github"></i></div>
+            <div class="cl-txt">
+              <span>GitHub</span>
+              <strong>github.com/abhishekbhaskaran</strong>
+            </div>
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="cl-link">
+            <div class="cl-ico"><i class="fa-brands fa-linkedin"></i></div>
+            <div class="cl-txt">
+              <span>LinkedIn</span>
+              <strong>linkedin.com/in/abhishekbhaskaran</strong>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="cf-group">
+          <input type="text"  id="cfName"    placeholder=" " required />
+          <label for="cfName">Your Name</label>
+          <span class="cf-err" id="errName">Name is required.</span>
+        </div>
+        <div class="cf-group">
+          <input type="email" id="cfEmail"   placeholder=" " required />
+          <label for="cfEmail">Your Email</label>
+          <span class="cf-err" id="errEmail">Valid email required.</span>
+        </div>
+        <div class="cf-group">
+          <textarea id="cfMsg" rows="5"      placeholder=" " required></textarea>
+          <label for="cfMsg">Your Message</label>
+          <span class="cf-err" id="errMsg">Message can't be empty.</span>
+        </div>
+        <button type="submit" class="cf-submit">
+          <span>Send Message</span>
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+        <div class="cf-success" id="cfSuccess">
+          <i class="fa-solid fa-circle-check"></i>
+          <span>Sent! I'll get back to you soon.</span>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="ft-logo">AB<em>.</em></span>
+      <p>&copy; 2025 Abhishek Bhaskaran &mdash; All rights reserved.</p>
+      <div class="ft-socials">
+        <a href="mailto:abhishekbhaskaran0913@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
